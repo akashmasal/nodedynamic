@@ -1,18 +1,29 @@
 {
   "name": "nodedynamic",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon src/app.js -e js,hbs,html,php"
+    "dev": "nodemon src/app.js -e js,hbs,html,php"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "jquery": "^3.6.1",
     "mongoose": "^6.6.1",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashmasal/nodedynamic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akashmasal/nodedynamic/issues"
+  },
+  "homepage": "https://github.com/akashmasal/nodedynamic#readme",
+  "description": ""
 }
