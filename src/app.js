@@ -11,6 +11,8 @@ app.use('/css', express.static(path.join(__dirname,"../node_modules/bootstrap/di
 app.use('/js', express.static(path.join(__dirname,"../node_modules/bootstrap/dist/js")));
 app.use('/jquery', express.static(path.join(__dirname,"../node_modules/jquery/dist")));
 app.use(express.static(staticpath));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.set("view engine","hbs");
 app.set("views",viewspath);
 hbs.registerPartials(partialspath);
@@ -38,6 +40,10 @@ app.get("/contact",(req,res)=>{
     // res.send("ok");
     res.render("contact");
 });
+
+app.post("/contact",(req,res)=>{
+    console.log(req.body);
+})
 
 
 
